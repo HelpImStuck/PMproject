@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPaneMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="560.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zhukov.osbb.Controller">
+    <children>
+        <AnchorPane fx:id="AnchorPaneMenu2" layoutY="97.0" prefHeight="483.0" prefWidth="560.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <DatePicker fx:id="MenuDate1" layoutX="36.0" layoutY="15.0" prefHeight="25.0" prefWidth="109.0" />
+            <ScrollBar layoutY="470.0" prefHeight="14.0" prefWidth="560.0" />
+            <ScrollBar fx:id="MenuScroll1" layoutX="546.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="471.0" prefWidth="14.0" />
+            <HBox layoutY="251.0" prefHeight="100.0" prefWidth="546.0">
+               <children>
+                  <Button fx:id="ExitButton" mnemonicParsing="false" onAction="#back_handleButtonAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63;" text="Exit">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="38.0" right="15.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="MenuBoxButton10" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63;" text="Settings">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="15.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Add_balance" mnemonicParsing="false" onAction="#open_addbalance" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63;" text="Add balance ">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="15.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63;" text="Show House">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="TextFieldMenu3" layoutX="206.0" layoutY="171.0" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: #fafafa;" text="Main menu " textFill="#2e3348">
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="TextFieldMenu2" layoutX="181.0" layoutY="139.0" prefHeight="41.0" prefWidth="201.0" style="-fx-background-color: #fafafa;" text="Welcome to the" textFill="#2e3348">
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="dell" layoutX="36.0" layoutY="408.0" mnemonicParsing="false" onAction="#open_dell" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63;" text="Delete inhabitant ( flat )">
+               <opaqueInsets>
+                  <Insets left="15.0" right="15.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="Addinh" alignment="CENTER" layoutX="162.0" layoutY="408.0" mnemonicParsing="false" onAction="#open_addinh" prefHeight="50.0" prefWidth="228.0" style="-fx-background-color: #F39C63;" text="Add inhabitant">
+               <opaqueInsets>
+                  <Insets left="15.0" right="15.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="inh_list_button" layoutX="415.0" layoutY="408.0" mnemonicParsing="false" onAction="#open_showlist" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63;" text="List inhabitant">
+               <opaqueInsets>
+                  <Insets left="15.0" right="15.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="MenuBoxButton31" layoutX="149.0" layoutY="2.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="55.0" style="-fx-background-color: #fafafa;" text="🔔" textFill="#f39c63">
+               <opaqueInsets>
+                  <Insets left="15.0" right="15.0" />
+               </opaqueInsets>
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button layoutX="220.0" layoutY="345.0" mnemonicParsing="false" onAction="#openVideo" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63;" text="play" />
+         </children>
+        </AnchorPane>
+      <Label layoutX="127.0" layoutY="33.0" prefHeight="41.0" prefWidth="307.0" text="OSBB-Controller v.2.13.4" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Ebrima Bold" size="26.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

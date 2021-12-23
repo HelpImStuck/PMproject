@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPaneMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="560.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zhukov.osbb.Controller">
+    <children>
+        <AnchorPane fx:id="AnchorPaneMenu2" layoutY="97.0" prefHeight="483.0" prefWidth="560.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <DatePicker fx:id="MenuDate1" layoutX="36.0" layoutY="15.0" prefHeight="25.0" prefWidth="109.0" />
+            <Label fx:id="TextFieldMenu3" layoutX="206.0" layoutY="156.0" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: #fafafa;" text="Main menu " textFill="#2e3348">
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="TextFieldMenu2" layoutX="181.0" layoutY="122.0" prefHeight="41.0" prefWidth="201.0" style="-fx-background-color: #fafafa;" text="Welcome to the" textFill="#2e3348">
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="dell" layoutX="283.0" layoutY="349.0" mnemonicParsing="false" onAction="#open_dell" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Delete " textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="15.0" right="15.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="Addinh" alignment="CENTER" layoutX="162.0" layoutY="411.0" mnemonicParsing="false" onAction="#open_addinh" prefHeight="50.0" prefWidth="228.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Add inhabitant" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="15.0" right="15.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="26.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="inh_list_button" layoutX="400.0" layoutY="349.0" mnemonicParsing="false" onAction="#open_showlist" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="List " textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="15.0" right="15.0" />
+               </opaqueInsets>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="MenuBoxButton31" layoutX="149.0" layoutY="2.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="55.0" style="-fx-background-color: #fafafa;" text="🔔" textFill="#f39c63">
+               <opaqueInsets>
+                  <Insets left="15.0" right="15.0" />
+               </opaqueInsets>
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button layoutX="177.0" layoutY="285.0" mnemonicParsing="false" onAction="#openVideo" prefHeight="50.0" prefWidth="201.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Videos" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="26.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="ExitButton" layoutX="41.0" layoutY="411.0" mnemonicParsing="false" onAction="#back_handleButtonAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="MenuBoxButton10" layoutX="52.0" layoutY="349.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="411.0" layoutY="411.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Show House" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="Add_balance" layoutX="169.0" layoutY="349.0" mnemonicParsing="false" onAction="#open_addbalance" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Add balance " textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Button>
+            <AnchorPane layoutY="473.0" prefHeight="16.0" prefWidth="560.0" style="-fx-background-color: #2E3348;" />
+            <AnchorPane layoutY="223.0" prefHeight="41.0" prefWidth="560.0" style="-fx-background-color: #2E3348;" />
+            <AnchorPane layoutY="-8.0" prefHeight="489.0" prefWidth="18.0" style="-fx-background-color: #2E3348;" />
+            <AnchorPane layoutX="543.0" layoutY="-8.0" prefHeight="489.0" prefWidth="18.0" style="-fx-background-color: #2E3348;" />
+         </children>
+        </AnchorPane>
+      <Label layoutX="127.0" layoutY="33.0" prefHeight="41.0" prefWidth="307.0" text="OSBB-Controller v.2.13.4" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Ebrima Bold" size="26.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

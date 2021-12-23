@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zhukov.osbb.ControllerVideo">
+    <children>
+      <AnchorPane prefHeight="78.0" prefWidth="800.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Label layoutX="242.0" layoutY="10.0" prefHeight="41.0" prefWidth="307.0" text="OSBB-Controller v.2.13.4" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+        <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="800.0">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" top="10.0" />
+            </VBox.margin>
+        </MediaView>
+      <AnchorPane prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+                <Slider fx:id="volumeSlider" layoutX="580.0" layoutY="71.0" prefHeight="14.0" prefWidth="156.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" value="30.0">
+               <effect>
+                  <DropShadow />
+               </effect></Slider>
+            <Label layoutX="575.0" layoutY="25.0" prefHeight="41.0" prefWidth="109.0" text="volume:">
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+            <HBox layoutX="14.0" layoutY="15.0" prefHeight="100.0" prefWidth="575.0">
+               <children>
+                      <Button mnemonicParsing="false" onAction="#pauseAction" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Pause" textFill="WHITE">
+                          <font>
+                              <Font name="Arial Rounded MT Bold" size="27.0" />
+                          </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="80.0" right="25.0" top="20.0" />
+                     </HBox.margin>
+                      </Button>
+                      <Button fx:id="playButton" mnemonicParsing="false" onAction="#playAction" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Play" textFill="WHITE">
+                          <font>
+                              <Font name="Arial Rounded MT Bold" size="27.0" />
+                          </font>
+                          <contextMenu>
+                              <ContextMenu>
+                                  <items>
+                                      <MenuItem mnemonicParsing="false" onAction="#contextExit" text="Exit" />
+                                  </items>
+                              </ContextMenu>
+                          </contextMenu>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <HBox.margin>
+                        <Insets right="25.0" top="20.0" />
+                     </HBox.margin>
+                      </Button>
+                      <Button mnemonicParsing="false" onAction="#resetAction" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Reset" textFill="WHITE">
+                          <font>
+                              <Font name="Arial Rounded MT Bold" size="27.0" />
+                          </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                      </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+    </children>
+</VBox>

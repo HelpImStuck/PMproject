@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zhukov.osbb.Controller">
+   <children>
+      <AnchorPane layoutX="-11.0" prefHeight="85.0" prefWidth="728.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Label layoutX="197.0" layoutY="22.0" prefHeight="41.0" prefWidth="307.0" text="OSBB-Controller v.2.13.4" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+
+      <TextArea fx:id="list" layoutY="85.0" prefHeight="300" prefWidth="700" style="-fx-background-color: #fafafa; -fx-border-color: silver;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </TextArea>
+
+      <Button layoutX="234.0" layoutY="437.0" mnemonicParsing="false" onAction="#showList" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #F39C63; -fx-background-radius: 25;" text="SHOW" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+
+
+      <Button layoutX="234.0" layoutY="510.0" mnemonicParsing="false" onAction="#exitList" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: #F39C63; -fx-background-radius: 25;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <AnchorPane layoutX="-11.0" layoutY="385.0" prefHeight="19.0" prefWidth="728.0" style="-fx-background-color: #2E3348;" />
+      <AnchorPane layoutX="-11.0" layoutY="583.0" prefHeight="19.0" prefWidth="728.0" style="-fx-background-color: #2E3348;" />
+      <AnchorPane layoutX="-11.0" layoutY="402.0" prefHeight="181.0" prefWidth="18.0" style="-fx-background-color: #2E3348;" />
+      <AnchorPane layoutX="699.0" layoutY="402.0" prefHeight="181.0" prefWidth="18.0" style="-fx-background-color: #2E3348;" />
+      <AnchorPane layoutX="-11.0" layoutY="75.0" prefHeight="317.0" prefWidth="18.0" style="-fx-background-color: #2E3348;" />
+      <AnchorPane layoutX="699.0" layoutY="75.0" prefHeight="317.0" prefWidth="18.0" style="-fx-background-color: #2E3348;" />
+
+
+   </children>
+</AnchorPane>

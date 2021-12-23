@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPaneReg1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="325.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zhukov.osbb.Controller">
+    <children>
+        <AnchorPane fx:id="AnchorPaneReg2" layoutY="98.0" prefHeight="315.0" prefWidth="325.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label fx:id="RegistrationMenuText2" layoutX="73.0" layoutY="14.0" text="Registration" textFill="#0d0000">
+                    <font>
+                        <Font name="Ebrima Bold" size="32.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="RegLog1" layoutX="88.0" layoutY="67.0" prefHeight="27.0" prefWidth="154.0" promptText="Login" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;" />
+                <PasswordField fx:id="RegPas1" layoutX="88.0" layoutY="105.0" prefHeight="25.0" prefWidth="154.0" promptText="Password" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;" />
+                <Button fx:id="RegEnter1" layoutX="86.0" layoutY="243.0" mnemonicParsing="false" onAction="#third_handleButtonAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #F39C63;" text="Enter" textFill="WHITE" />
+                <Button fx:id="ExitButton" layoutX="86.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #F39C63;" text="Exit" textFill="WHITE" />
+            <PasswordField fx:id="RegPas2" layoutX="89.0" layoutY="141.0" prefHeight="25.0" prefWidth="154.0" promptText="Password again" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;" />
+            <CheckBox fx:id="Check1" layoutX="99.0" layoutY="214.0" mnemonicParsing="false" selected="true" text="Male" />
+            <CheckBox fx:id="Check2" layoutX="166.0" layoutY="214.0" mnemonicParsing="false" text="Female" />
+            <TextField fx:id="RegMail1" layoutX="88.0" layoutY="178.0" prefHeight="27.0" prefWidth="154.0" promptText="Your email" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;" />
+            </children>
+        </AnchorPane>
+        <Label fx:id="RegistrationMenuText1" layoutX="27.0" layoutY="24.0" prefHeight="41.0" prefWidth="282.0" text="OSBB-Controller v.2.01" textFill="WHITE">
+            <font>
+                <Font name="Ebrima Bold" size="26.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

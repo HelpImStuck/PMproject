@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zhukov.osbb.Controller">
+   <children>
+      <AnchorPane prefHeight="85.0" prefWidth="600.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Label layoutX="147.0" layoutY="24.0" prefHeight="41.0" prefWidth="307.0" text="OSBB-Controller v.2.13.4" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="209.0" layoutY="342.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #F39C63;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="RegEnter1" layoutX="209.0" layoutY="284.0"  mnemonicParsing="false" onAction="#third_handleButtonAction" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #F39C63;" text="Registration" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="addId" layoutX="118.0" layoutY="112.0" prefHeight="44.0" prefWidth="183.0" promptText="Inhabitant id" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addName" layoutX="312.0" layoutY="112.0" prefHeight="44.0" prefWidth="183.0" promptText="First name" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addLastName" layoutX="312.0" layoutY="170.0" prefHeight="44.0" prefWidth="183.0" promptText="Last name" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addBalance" layoutX="118.0" layoutY="170.0" prefHeight="44.0" prefWidth="183.0" promptText="Balance" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addAge" layoutX="210.0" layoutY="226.0" prefHeight="44.0" prefWidth="183.0" promptText="Age" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

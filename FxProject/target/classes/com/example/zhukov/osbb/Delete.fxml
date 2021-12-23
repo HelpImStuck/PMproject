@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Label layoutX="147.0" layoutY="30.0" prefHeight="41.0" prefWidth="307.0" text="OSBB-Controller v.2.13.4" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Ebrima Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="deleteId" layoutX="210.0" layoutY="167.0" prefHeight="44.0" prefWidth="183.0" promptText="Inhabitant id" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="210.0" layoutY="262.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="210.0" layoutY="325.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="183.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <AnchorPane layoutY="83.0" prefHeight="317.0" prefWidth="18.0" style="-fx-background-color: #2E3348;" />
+      <AnchorPane layoutX="582.0" layoutY="83.0" prefHeight="317.0" prefWidth="18.0" style="-fx-background-color: #2E3348;" />
+      <AnchorPane layoutX="9.0" layoutY="384.0" prefHeight="16.0" prefWidth="586.0" style="-fx-background-color: #2E3348;" />
+      <AnchorPane layoutX="8.0" layoutY="226.0" prefHeight="16.0" prefWidth="586.0" style="-fx-background-color: #2E3348;" />
+   </children>
+</AnchorPane>

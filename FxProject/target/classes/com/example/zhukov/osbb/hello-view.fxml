@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPaneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="325.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zhukov.osbb.Controller">
+   <children>
+       <AnchorPane layoutY="98.0" prefHeight="315.0" prefWidth="325.0" style="-fx-background-color: #fafafa;">
+         <children>
+              <Label fx:id="Text1Filed" layoutX="59.0" layoutY="14.0" text="Authorization" textFill="#0d0000">
+                  <font>
+                      <Font name="Ebrima Bold" size="32.0" />
+                  </font>
+              </Label>
+              <TextField fx:id="LoginFiled" layoutX="88.0" layoutY="67.0" prefHeight="27.0" prefWidth="154.0" promptText="Login" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;" />
+              <PasswordField fx:id="ps_field" layoutX="88.0" layoutY="110.0" prefHeight="25.0" prefWidth="154.0" promptText="Password" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 10;" />
+              <Button fx:id="EnterButton" layoutX="86.0" layoutY="151.0" mnemonicParsing="false" onAction="#first_handleButtonAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Enter" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Button>
+              <Button fx:id="ExitButton" layoutX="86.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Exit" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Button>
+              <Button fx:id="OtherButtonsButton" layoutX="112.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Other buttons" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="RegButton" layoutX="86.0" layoutY="189.0" mnemonicParsing="false" onAction="#second_handleButtonAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #F39C63; -fx-background-radius: 15;" text="Registration" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Button>
+         </children>
+       </AnchorPane>
+       <Label layoutX="9.0" layoutY="22.0" prefHeight="41.0" prefWidth="307.0" text="OSBB-Controller v.2.13.4" textFill="WHITE">
+           <font>
+               <Font name="Ebrima Bold" size="26.0" />
+           </font>
+         <effect>
+            <DropShadow />
+         </effect>
+       </Label>
+   </children>
+</AnchorPane>
